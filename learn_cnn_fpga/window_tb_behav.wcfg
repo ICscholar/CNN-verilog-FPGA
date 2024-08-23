@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="window_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="window_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.269269 us"></ZoomStartTime>
+      <ZoomEndTime time="16.689270 us"></ZoomEndTime>
+      <Cursor1Time time="3.005935 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="129"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/window_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/window_tb/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/window_tb/start_window" type="logic">
+      <obj_property name="ElementShortName">start_window</obj_property>
+      <obj_property name="ObjectShortName">start_window</obj_property>
+   </wvobject>
+   <wvobject fp_name="/window_tb/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/window_tb/image_in" type="array">
+      <obj_property name="ElementShortName">image_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">image_in[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/window_tb/taps" type="array">
+      <obj_property name="ElementShortName">taps[39:0]</obj_property>
+      <obj_property name="ObjectShortName">taps[39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/window_tb/fp_i" type="array">
+      <obj_property name="ElementShortName">fp_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fp_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/window_tb/count_w" type="array">
+      <obj_property name="ElementShortName">count_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count_w[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/window_tb/cnt_line" type="array">
+      <obj_property name="ElementShortName">cnt_line[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_line[10:0]</obj_property>
+   </wvobject>
+</wave_config>

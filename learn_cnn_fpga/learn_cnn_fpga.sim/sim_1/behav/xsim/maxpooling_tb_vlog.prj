@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../learn_cnn_fpga.srcs/sources_1/imports/src_top/maxpooling_24X24.v" \
+"../../../../learn_cnn_fpga.srcs/sim_1/imports/sim/maxpooling_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

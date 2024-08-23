@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="conv_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="conv_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2,733.696 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,947.197 ns"></ZoomEndTime>
+      <Cursor1Time time="16,590.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="225"></NameColumnWidth>
+      <ValueColumnWidth column_width="169"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/conv_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/start_conv" type="logic">
+      <obj_property name="ElementShortName">start_conv</obj_property>
+      <obj_property name="ObjectShortName">start_conv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/weight_en" type="logic">
+      <obj_property name="ElementShortName">weight_en</obj_property>
+      <obj_property name="ObjectShortName">weight_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/weight_c" type="array">
+      <obj_property name="ElementShortName">weight_c[7:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_c[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/start_window" type="logic">
+      <obj_property name="ElementShortName">start_window</obj_property>
+      <obj_property name="ObjectShortName">start_window</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/image_in" type="array">
+      <obj_property name="ElementShortName">image_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">image_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/conv_result" type="array">
+      <obj_property name="ElementShortName">conv_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/conv_ovalid" type="logic">
+      <obj_property name="ElementShortName">conv_ovalid</obj_property>
+      <obj_property name="ObjectShortName">conv_ovalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/conv_done" type="logic">
+      <obj_property name="ElementShortName">conv_done</obj_property>
+      <obj_property name="ObjectShortName">conv_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/taps" type="array">
+      <obj_property name="ElementShortName">taps[39:0]</obj_property>
+      <obj_property name="ObjectShortName">taps[39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/fp_i" type="array">
+      <obj_property name="ElementShortName">fp_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fp_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/count_w" type="array">
+      <obj_property name="ElementShortName">count_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count_w[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/STATE" type="array">
+      <obj_property name="ElementShortName">STATE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/cnt_line" type="array">
+      <obj_property name="ElementShortName">cnt_line[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_line[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/conv_result_r" type="array">
+      <obj_property name="ElementShortName">conv_result_r[0:599][31:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_result_r[0:599][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/cnt_conv" type="array">
+      <obj_property name="ElementShortName">cnt_conv[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_conv[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/display_line" type="array">
+      <obj_property name="ElementShortName">display_line[31:0]</obj_property>
+      <obj_property name="ObjectShortName">display_line[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/iIndex" type="array">
+      <obj_property name="ElementShortName">iIndex[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iIndex[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/iBmpWidth" type="array">
+      <obj_property name="ElementShortName">iBmpWidth[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iBmpWidth[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/iBmpHight" type="array">
+      <obj_property name="ElementShortName">iBmpHight[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iBmpHight[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/iBmpSize" type="array">
+      <obj_property name="ElementShortName">iBmpSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iBmpSize[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/iDataStartIndex" type="array">
+      <obj_property name="ElementShortName">iDataStartIndex[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iDataStartIndex[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/iBmpFileId" type="array">
+      <obj_property name="ElementShortName">iBmpFileId[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iBmpFileId[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/iCode" type="array">
+      <obj_property name="ElementShortName">iCode[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iCode[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/oBmpFileId_1" type="array">
+      <obj_property name="ElementShortName">oBmpFileId_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">oBmpFileId_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/rBmpData" type="array">
+      <obj_property name="ElementShortName">rBmpData[0:2000][7:0]</obj_property>
+      <obj_property name="ObjectShortName">rBmpData[0:2000][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/conv_pixel_data_1" type="array">
+      <obj_property name="ElementShortName">conv_pixel_data_1[0:2000][7:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_pixel_data_1[0:2000][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/conv_BmpData_1" type="array">
+      <obj_property name="ElementShortName">conv_BmpData_1[0:2000][7:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_BmpData_1[0:2000][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/k" type="array">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/conv_tb/cycle" type="array">
+      <obj_property name="ElementShortName">cycle[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle[31:0]</obj_property>
+   </wvobject>
+</wave_config>
