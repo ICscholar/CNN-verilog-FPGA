@@ -37,3 +37,74 @@ input figure（28x28）-> conv (2x2x6) -> 24x24x6 feature map -> activation（re
 			endcase
 	end
 
+### max_pooling part:
+	// 两行对应索引数据对比，缓存较大值
+	//由于池化窗口为2*2，因此缓存一行且输入第二行才可以进行计算、比较。不同行相同索引的像素值比较大小存入较大的数值存入reg0 or reg1，且reg0 or 1 是以0，1，0，1，...交替进行的
+	always@(posedge clk)
+	begin
+		case({state,cnt}) // 这里的 cnt是触发时的值，而不是计算后的值
+		2'b00:begin
+			if(ptr >= 7'd24)
+			begin
+				//对于data_reg_0 要么存上一行 要么存下一行
+				if(din>data[ptr-7'd24])
+					data_reg_0 <= din;
+				else
+					data_reg_0 <= data[ptr-7'd24];
+			end
+			else
+				data_reg_0 <= 0;
+			end
+		2'b01:begin
+			if(ptr >= 7'd24)
+			begin
+				//对于data_reg_1 要么存上一行 要么存下一行
+				if(din>data[ptr-7'd24])
+					data_reg_1 <= din;
+				else
+					data_reg_1 <= data[ptr-7'd24];
+			end
+			else
+				data_reg_1 <= 0;
+			end
+		2'b10:begin
+			if(ptr >= 7'd9)
+			begin
+				if(din>data[ptr-7'd9])
+					data_reg_0 <= din;
+				else
+					data_reg_0 <= data[ptr-7'd9];
+			end
+			else
+				data_reg_0 <= 0;
+			end
+		2'b11:begin
+			if(ptr >= 7'd9)
+			begin
+				if(din>data[ptr-7'd9])
+					data_reg_1 <= din;
+				else
+					data_reg_1 <= data[ptr-7'd9];
+			end
+			else
+				data_reg_1 <= 0;
+			end 
+		default:begin
+				data_reg_1 <= 0; 
+				data_reg_0 <= 0;
+				end         
+		endcase
+	end
+ #### 延时锁存器(边沿检测器)
+ 	// 打拍采沿
+	reg cnt_d;
+	always@(posedge clk)begin
+		if(!rstn)
+			cnt_d <= 0;
+		else
+			cnt_d <= cnt;
+	end
+	
+	// cnt 为 1时，输出才是有效的，即 2*2 的kernel， cnt=1含义为第二行且为偶数位索引（从1计数）
+	// 筛选输出数据
+	assign ovalid = ~cnt && cnt_d; // 采样下降沿,当 cnt 从 1 变为 0 时（即 cnt_d = 1 且 cnt = 0），ovalid 信号会变为有效。也就是信号的下降沿被捕捉到了，这一时刻输出数据是有效的。
